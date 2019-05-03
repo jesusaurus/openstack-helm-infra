@@ -142,6 +142,7 @@ network:
       nginx.ingress.kubernetes.io/configuration-snippet: |
         more_set_headers "X-Content-Type-Options: nosniff";
         more_set_headers "X-Frame-Options: deny";
+      nginx.ingress.kubernetes.io/bind-address-ipv6: []
   external_policy_local: false
 
 dependencies:
